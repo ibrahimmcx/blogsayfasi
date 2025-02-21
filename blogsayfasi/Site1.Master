@@ -1,0 +1,142 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>İbrahim Culfa - Kişisel Sayfa</title>
+
+    <style>
+        /* Temel stil ayarları */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header-bar {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .site-logo a {
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .main-menu {
+            margin-top: 15px;
+        }
+
+        .main-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .main-menu ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .main-menu ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .site-section-hero {
+            background-image: url('images/hero-min.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+        }
+
+        .site-section-hero h1 {
+            font-size: 3em;
+        }
+
+        .photo-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .section {
+            padding: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="header-bar">
+        <div class="site-logo">
+            <a href="index.html">KİŞİSEL</a>
+        </div>
+
+        <div class="main-menu">
+            <ul>
+                <li><a href="#section-home">Ev</a></li>
+                <li><a href="#section-photos">Fotoğraflar</a></li>
+                <li><a href="#section-about">Hakkında</a></li>
+                <li><a href="#section-contact">İletişim</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+
+        <!-- Hero Section -->
+        <section class="site-section-hero" id="section-home">
+            <h1>İbrahim Culfa</h1>
+        </section>
+
+        <!-- Fotoğraflar -->
+        <section class="site-section" id="section-photos">
+            <h2 class="text-center">Fotoğraflar</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href="#"><img src="images/img_1.jpg" alt="Image 1" class="photo-item"></a>
+                </div>
+                <div class="col-4">
+                    <a href="#"><img src="images/img_2.jpg" alt="Image 2" class="photo-item"></a>
+                </div>
+                <div class="col-4">
+                    <a href="#"><img src="images/img_3.jpg" alt="Image 3" class="photo-item"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hakkında -->
+        <section class="site-section" id="section-about">
+            <h2 class="text-center">Merhaba ben İbrahim Culfa</h2>
+            <p class="text-center">Bilişim sistemleri mühendisliği 2.sınıf öğrencisi olarak java, html, css, javascript, asp.net, mssql gibi teknolojileri öğrenmeye başladım.</p>
+        </section>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; <span id="current-year"></span> İbrahim Culfa. Sevgiyle tasarlandı.</p>
+        </div>
+
+    </div>
+
+    <script>
+        // Yıl bilgisini güncellemek için
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
